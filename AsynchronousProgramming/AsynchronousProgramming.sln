@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousProgramming", "AsynchronousProgramming\AsynchronousProgramming.csproj", "{5406B45C-7C6E-45C6-8BA8-0CD50FDD2466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBasedAsyncronousProgramming", "EventBasedAsyncronousProgramming\EventBasedAsyncronousProgramming.csproj", "{9E0BA5F4-3399-4DF8-AC87-0D8425925AE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismDemo", "Src\PrismDemo\PrismDemo.csproj", "{4FB6A1B4-EB54-4EB6-AD0F-5683D9711B02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismDemo.Infrastructure", "Src\PrismDemo.Infrastructure\PrismDemo.Infrastructure.csproj", "{BB3F71FB-42BC-4907-A5CE-26277A00E2CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{644BBBCE-3E8C-4F7A-9D68-36EE0132EEA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{6643F415-C541-4C5C-9999-127A69804F50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismDemoMefBootstrapper", "Src\PrismDemoMefBootstrapper\PrismDemoMefBootstrapper.csproj", "{574C19D1-79B7-442B-B1E5-1FC8CF711D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleA", "Src\Modules\ModuleA\ModuleA.csproj", "{79F6315B-573F-4240-AEAE-A019D683A04E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5406B45C-7C6E-45C6-8BA8-0CD50FDD2466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5406B45C-7C6E-45C6-8BA8-0CD50FDD2466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5406B45C-7C6E-45C6-8BA8-0CD50FDD2466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5406B45C-7C6E-45C6-8BA8-0CD50FDD2466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0BA5F4-3399-4DF8-AC87-0D8425925AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0BA5F4-3399-4DF8-AC87-0D8425925AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0BA5F4-3399-4DF8-AC87-0D8425925AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0BA5F4-3399-4DF8-AC87-0D8425925AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB6A1B4-EB54-4EB6-AD0F-5683D9711B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB6A1B4-EB54-4EB6-AD0F-5683D9711B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB6A1B4-EB54-4EB6-AD0F-5683D9711B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB6A1B4-EB54-4EB6-AD0F-5683D9711B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB3F71FB-42BC-4907-A5CE-26277A00E2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3F71FB-42BC-4907-A5CE-26277A00E2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3F71FB-42BC-4907-A5CE-26277A00E2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3F71FB-42BC-4907-A5CE-26277A00E2CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{574C19D1-79B7-442B-B1E5-1FC8CF711D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{574C19D1-79B7-442B-B1E5-1FC8CF711D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{574C19D1-79B7-442B-B1E5-1FC8CF711D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{574C19D1-79B7-442B-B1E5-1FC8CF711D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F6315B-573F-4240-AEAE-A019D683A04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F6315B-573F-4240-AEAE-A019D683A04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F6315B-573F-4240-AEAE-A019D683A04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F6315B-573F-4240-AEAE-A019D683A04E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79F6315B-573F-4240-AEAE-A019D683A04E} = {6643F415-C541-4C5C-9999-127A69804F50}
+	EndGlobalSection
+EndGlobal
