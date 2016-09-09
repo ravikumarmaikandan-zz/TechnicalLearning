@@ -11,6 +11,7 @@ namespace Algorithms
     static void Main(string[] args)
     {
       Patternmatching.KMPAlgorithm();
+      Searching.BinarySearchAlgorithm();
       Console.ReadLine();
     }
   }
