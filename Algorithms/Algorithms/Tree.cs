@@ -40,11 +40,18 @@ namespace Algorithms
     {
       int[] input = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
       int start = 0, end = input.Length - 1;
-      var mid = (start + end) / 2;
+      Node node = CreateSubTree(input, 0, input.Length-1);
     }
-    private static void CreateSubTree(int[] input, mid, left, right)
+    private static Node CreateSubTree(int[] input,int start, int end)
     {
+      if (start > end)
+        return null;
+      var mid = start + (end - start) / 2;
+      var node = new Node(input[mid]);
+      node.Left = CreateSubTree(input,start, mid - 1);
+      node.Right = CreateSubTree(input, mid + 1, end);
 
+      return node;
     }
   }
   public class BinarySearchTreeNode<T> : Node<T>
@@ -211,6 +218,10 @@ namespace Algorithms
     public int data;
     public Node Left;
     public Node Right;
+    public Node(int Data)
+    {
+      data = Data;
+    }
   }
 
 }
