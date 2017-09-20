@@ -12,6 +12,7 @@ namespace ArraysAndStrings
     {
         private static void Main(string[] args)
         {
+            var ggg = Stringmanipulation.StringOccuranceIn2Dmatrix();
             Stringmanipulation.NumberToWords(1234);
             var isBalancedParenthis = Stringmanipulation.IsBalancedParentheses();
             Numbers.FindGreatestSumFromArrayItems();
@@ -45,16 +46,9 @@ namespace ArraysAndStrings
             linkedList.Remove("Third");
             linkedList.PrintList();
 
-
-
-
-
-
-
             var collectionProgram = new CollectionPrograms();
             collectionProgram.FindContinuousCollection(8);
-            var prog = new SampleProgram();
-            Console.WriteLine(prog.Print());
+            
             Console.ReadLine();
             SampleClass tt = new SampleClass();
             var result = tt.Division(4, 2);

@@ -44,12 +44,9 @@
     <Compile Include="BitManipulation.cs" />
     <Compile Include="CollectionPrograms.cs" />
     <Compile Include="CustomLinkedList.cs" />
-    <Compile Include="DerivedClass.cs" />
-    <Compile Include="FirstInterface.cs" />
     <Compile Include="Numbers.cs" />
     <Compile Include="BaseClass.cs" />
     <Compile Include="SampleClass.cs" />
-    <Compile Include="SampleProgram.cs" />
     <Compile Include="Stringmanipulation.cs" />
     <Compile Include="Trigger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

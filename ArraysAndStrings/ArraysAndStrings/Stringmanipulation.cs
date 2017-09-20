@@ -425,5 +425,62 @@ namespace ArraysAndStrings
 
             return words;
         }
+
+        public static string StringOccuranceIn2Dmatrix()
+        {
+            char[][] charArray = new char[][]
+            {
+                new[] {'E', 'N', 'I', 'N'},
+                new[] {'V', 'E', 'X', 'E'},
+                new[] {'I', 'N', 'N', 'V'},
+                new[] {'F', 'I', 'V', 'E'},
+            };
+
+            string findWord = "five";
+            int count = 0;
+            int width = charArray[0].Length;
+            int height = charArray.Length;
+            var wordArray = findWord.ToCharArray();
+
+            //Horizontal Left to right
+            for (int i = 0; i < height; i++)
+            {
+                string w1 = new string(charArray[i]);
+                
+                StringBuilder temp = new StringBuilder(findWord);
+                char[] tempArray = temp.ToString().ToCharArray();
+                Array.Reverse(tempArray);
+                
+                string rw = new string(tempArray);
+
+                if (findWord.Equals(w1, StringComparison.CurrentCultureIgnoreCase) ||
+                    rw.Equals(w1, StringComparison.CurrentCultureIgnoreCase))
+                {
+                    count++;
+                }
+            }
+
+            //vertical search
+            for (int i = 0; i < height; i++)
+            {
+                StringBuilder sb = new StringBuilder();
+                for (int j = 0; j < width; j++)
+                {
+                    sb.Append(charArray[j][i]);
+                }
+                
+                StringBuilder sbflipped = new StringBuilder(sb.ToString());
+                char[] tempArray = sbflipped.ToString().ToCharArray();
+                Array.Reverse(tempArray);
+                 var sbReverse = new string(tempArray);
+                if (findWord.Equals(sb.ToString(), StringComparison.CurrentCultureIgnoreCase) ||
+                    findWord.Equals(sbReverse, StringComparison.CurrentCultureIgnoreCase))
+                {
+                    count++;
+                }
+            }
+
+            return count.ToString();
+        }
     }
 }
