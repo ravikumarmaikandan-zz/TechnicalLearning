@@ -10,6 +10,7 @@ namespace Algorithms
   {
     static void Main(string[] args)
     {
+      Anagram.IsAnagram();
       Patternmatching.KMPAlgorithm();
       Tree.BinarySearchTree();
       Searching.BinarySearchAlgorithm();
